@@ -1,0 +1,174 @@
+.evo {
+    margin-bottom: 94px;
+}
+.evo-black {
+    background-color: var(--color-darkGrey);
+    padding: 100px 0 50px;
+}
+.evo-black__inner {
+    position: relative;
+}
+
+.evo-black__inner::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/dec-1.svg');
+    width: 185px;
+    height: 213px;
+    top: 213px;
+    left: -140px;
+}
+.evo-black__inner::after{
+    content: "";
+    position: absolute;
+    background-image: url('../images/dec-2.svg');
+    width: 498px;
+    height: 572px;
+    top: 293px;
+    left: -44px;
+}
+
+.evo-black__info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+    gap: 192px;
+}
+.evo-black__title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 300;
+}
+.evo-black__infobox {
+    flex-basis: 437px;
+}
+.infobox-black-p {
+
+}
+
+.infobox-black-p:first-child {
+   margin-bottom: 30px;
+}
+.evo-black__img {
+    display: block;
+    margin: 200px auto 60px;
+    position: relative;
+    z-index: 1;
+}
+.evo-black__descr-list {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.evo-black__descr-list dd, dt {
+
+}
+.evo-white {
+
+}
+.evo-white__inner {
+    padding-top: 125px;
+    position: relative;
+}
+.evo-white__inner::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/dec-3.png');
+    width: 274px;
+    height: 257px;
+    top: -23px;
+    left: 360px;
+}
+.evo-white__inner::after{
+    content: "";
+    position: absolute;
+    background-image: url('../images/dec-4.png');
+    width: 324px;
+    height: 311px;
+    top: 120px;
+    left: 593px;
+}
+.evo-white__p {
+    margin-bottom: 30px;
+}
+.evo-white__p:first-child {
+    max-width: 285px;
+}
+.evo-white__p:nth-child(2) {
+    max-width: 437px;
+}
+.evo-white__p:nth-child(3) {
+    max-width: 600px;
+    margin-bottom: 102px;
+}
+
+.evo-white__video {
+    background-image: url('../images/evo-video.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 264px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.evo-white__video-link {
+
+}
+
+.evo-white__video-link span {
+    display: block;
+    color: var(--color-white);
+}
+
+@media(max-width: 969px){
+    .evo-white__inner::after{
+        display: none;
+    }
+}
+
+@media(max-width: 669px){
+    .evo-black {
+        padding: 50px 0 25px;
+    }
+    .evo-black__info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .evo-black__infobox {
+       flex-basis: auto;
+    }
+
+    .evo-black__descr-list {
+        gap: 15px;
+    }
+    .evo-black__descr-list dd, dt {
+        font-size: 10px;
+    }
+    .evo-white__inner{
+        padding-top: 50px;
+    }
+
+    .evo-white__inner .evo-white__p {
+        max-width: 100%;
+    }
+
+    .evo-white__inner::before{
+        display: none;
+    }
+
+    .evo-white__p:nth-child(3) {
+         margin-bottom: 10px;
+    }
+    .evo-black__inner::after {
+        display: none;
+    }
+}
+
